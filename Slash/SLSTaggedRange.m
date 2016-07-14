@@ -16,13 +16,20 @@
 
 @implementation SLSTaggedRange
 
+- (void)dealloc
+{
+    [_tagName release];
+
+    [super dealloc];
+}
+
 + (instancetype)tagWithName:(NSString *)tagName range:(NSRange)range
 {
     SLSTaggedRange *taggedRange = [[self alloc] init];
-    
+
     taggedRange.tagName = tagName;
     taggedRange.range = range;
-    
+
     return taggedRange;
 }
 

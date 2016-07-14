@@ -27,24 +27,27 @@ int SLSTagParser_parse(yyscan_t scanner, SLSTagParser *ctx);
     self = [super init];
     if (!self)
         return nil;
-    
+
     SLSTagParser_lex_init(&_scanner);
     _attributedString = [[NSMutableAttributedString alloc] init];
     _taggedRanges = [[NSMutableArray alloc] init];
-    
+
     return self;
 }
 
 - (void)dealloc
 {
     [_attributedString release];
+    for(SLSTaggedRange *r in _taggedRanges) {
+        [r release];
+    }
     [_taggedRanges release];
     [_error release];
-    
+
     if (_scanner) {
         SLSTagParser_lex_destroy(_scanner);
     }
-    
+
     [super dealloc];
 }
 
@@ -52,7 +55,7 @@ int SLSTagParser_parse(yyscan_t scanner, SLSTagParser *ctx);
 {
     NSAssert(!_hasParsed, @"SLSTagParser is not reusable");
     _hasParsed = YES;
-             
+
     YY_BUFFER_STATE buf = SLSTagParser__scan_string([markup UTF8String], _scanner);
     SLSTagParser_parse(_scanner, self);
     SLSTagParser__delete_buffer(buf, _scanner);
