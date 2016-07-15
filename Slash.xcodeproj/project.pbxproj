@@ -33,8 +33,8 @@
 
 /* Begin PBXBuildFile section */
 		61295D2C16B88E7F005DB02C /* SLSTaggedRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 61295D2A16B88E7F005DB02C /* SLSTaggedRange.h */; };
-		61295D2D16B88E7F005DB02C /* SLSTaggedRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D2B16B88E7F005DB02C /* SLSTaggedRange.m */; };
-		61295D2E16B88E7F005DB02C /* SLSTaggedRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D2B16B88E7F005DB02C /* SLSTaggedRange.m */; };
+		61295D2D16B88E7F005DB02C /* SLSTaggedRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D2B16B88E7F005DB02C /* SLSTaggedRange.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		61295D2E16B88E7F005DB02C /* SLSTaggedRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D2B16B88E7F005DB02C /* SLSTaggedRange.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		61295D3116B88E93005DB02C /* SLSTagParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 61295D2F16B88E92005DB02C /* SLSTagParser.h */; };
 		61295D3216B88E93005DB02C /* SLSTagParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D3016B88E92005DB02C /* SLSTagParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		61295D3316B88E93005DB02C /* SLSTagParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D3016B88E92005DB02C /* SLSTagParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -85,13 +85,13 @@
 		859310051C4F7DFE0019C5B9 /* Tests_OSX.m in Sources */ = {isa = PBXBuildFile; fileRef = 859310041C4F7DFE0019C5B9 /* Tests_OSX.m */; };
 		859310071C4F7DFE0019C5B9 /* libSlash-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6154849E167A0C7400A37428 /* libSlash-OSX.a */; };
 		8593100D1C4F7E170019C5B9 /* SLSMarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6154844B167A087E00A37428 /* SLSMarkupParser.m */; };
-		8593100E1C4F7E170019C5B9 /* SLSTaggedRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D2B16B88E7F005DB02C /* SLSTaggedRange.m */; };
+		8593100E1C4F7E170019C5B9 /* SLSTaggedRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D2B16B88E7F005DB02C /* SLSTaggedRange.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8593100F1C4F7E170019C5B9 /* SLSTagParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D3016B88E92005DB02C /* SLSTagParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		859310101C4F7E170019C5B9 /* SLSTagParser.gen.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D4216B89F46005DB02C /* SLSTagParser.gen.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		859310111C4F7E170019C5B9 /* SLSTagLexer.gen.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D4016B89F44005DB02C /* SLSTagLexer.gen.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		859310121C4F7E170019C5B9 /* TestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 615484BD167A0F1D00A37428 /* TestParser.m */; };
 		859310131C4F7E180019C5B9 /* SLSMarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6154844B167A087E00A37428 /* SLSMarkupParser.m */; };
-		859310141C4F7E180019C5B9 /* SLSTaggedRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D2B16B88E7F005DB02C /* SLSTaggedRange.m */; };
+		859310141C4F7E180019C5B9 /* SLSTaggedRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D2B16B88E7F005DB02C /* SLSTaggedRange.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		859310151C4F7E180019C5B9 /* SLSTagParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D3016B88E92005DB02C /* SLSTagParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		859310161C4F7E180019C5B9 /* SLSTagParser.gen.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D4216B89F46005DB02C /* SLSTagParser.gen.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		859310171C4F7E180019C5B9 /* SLSTagLexer.gen.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D4016B89F44005DB02C /* SLSTagLexer.gen.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
